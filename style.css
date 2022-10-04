@@ -1,0 +1,154 @@
+body {
+    text-align: center;
+     background-image: linear-gradient(to right top, #fa2525, #f17e19, #fffb00, #00ff40, #0077ff);
+
+     background-image;:src="minecraft fundo.png"}
+     :root {
+        --purple: #9920ea;
+        --purple-black: #5e1580;
+        --white: #fff;
+        --gray: #ccc;
+      }
+      
+      .btn {
+        width: 200px;
+        height: 88px;
+        outline: 0;
+        border: 2px solid var(--gray);
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.05);
+      }
+      
+      .btn:hover {
+        box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.2);
+      }
+      
+      .btn-curtir {
+        padding: 1.5rem 1.5rem 1.5rem 6rem;
+        font-size: 2rem;
+        border-radius: 10px;
+        background: var(--white);
+      }
+      
+      .btn-curtir.curtido {
+        background: var(--purple);
+        border-color: var(--purple-black);
+      }
+      
+      /* Icone do botão */
+      .btn-icone {
+        display: inline-block;
+        width: 32px;
+        height: 36px;
+        position: absolute;
+        left: 1.5rem;
+        transform: rotate(0deg);
+      }
+      
+      /* Cor do icone e pulsar */
+      .curtido .btn--icone-curtir {
+        transform: scale(2);
+      }
+      
+      .btn:not(.curtido).btn--icone-curtido {
+        transform: scale(-2);
+      }
+      
+      .curtido .btn--icone-curtir,
+      .btn--icone-curtido {
+        opacity: 0;
+        position: absolute;
+      }
+      
+      .btn--icone-curtir,
+      .curtido .btn--icone-curtido {
+        opacity: 1;
+        left: 1.5rem;
+      }
+      
+      /*-- Conteudo do botão -- */
+      .btn-conteudo {
+        display: inline-block;
+      }
+      
+      /* Rotação */
+      .btn:not(.curtido) .btn-conteudo--curtido {
+        transform: translate(110px);
+      }
+      
+      .btn:not(.curtido) .btn-conteudo--curtir {
+        transform: translate(-99px);
+      }
+      
+      .curtido .btn-conteudo--curtir {
+        transform: translate(40px);
+      }
+      
+      .btn-conteudo--curtido {
+        transform: translate(-11px);
+      }
+      
+      /* Classes que utilizam propriedades iguais */
+      .btn,
+      .btn-curtir,
+      .btn-icone,
+      .curtido,
+      .btn-conteudo,
+      .btn-conteudo--curtir,
+      .btn-conteudo--curtir {
+        transition: 1.5s;
+      }
+      
+      .btn,
+      .btn:hover.curtido .btn-conteudo,
+      .btn.curtido:hover .btn-icone {
+        color: var(--purple-black);
+      }
+      
+      .btn:hover,
+      .btn:hover .btn-icone {
+        color: var(--purple);
+      }
+      
+      .curtido .btn--icone-curtir,
+      .btn--icone-curtido,
+      .curtido .btn-conteudo {
+        color: var(--white);
+      }   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      #divBusca{
+        background-color:#2F4F4F;
+        border:solid 1px;
+        border-radius:15px;
+        width:300px;
+      }
+      
+      #txtBusca{
+        float:left;
+        background-color:transparent;
+        padding-left:5px;
+        font-style:italic;
+        font-size:18px;
+        border:none;
+        height:32px;
+        width:260px;
+      }
